@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stream_gold_rate/src/features/gold/presentation/gold_screen.dart';
+import 'package:stream_gold_rate/src/features/gold/presentation/real_gold_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -11,7 +12,7 @@ class App extends StatelessWidget {
       darkTheme: ThemeData.from(
           colorScheme: ColorScheme.fromSeed(
               seedColor: Colors.amberAccent, brightness: Brightness.dark)),
-      home: const GoldScreen(),
+      home: const RealGoldScreen(),
     );
   }
 }

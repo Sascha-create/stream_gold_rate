@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:stream_gold_rate/src/features/gold/data/fake_gold_api.dart';
+import 'package:stream_gold_rate/src/features/gold/data/real_gold_api.dart';
 
-class GoldScreen extends StatelessWidget {
-  const GoldScreen({super.key});
+class RealGoldScreen extends StatelessWidget {
+  const RealGoldScreen({super.key});
   @override
   Widget build(BuildContext context) {
     /// Platzhalter für den Goldpreis
     /// soll durch den Stream `getGoldPriceStream()` ersetzt werden
     double? goldPrice = 69.22;
     //double newPrice = 1000.0;
-
-
 
     return SafeArea(
       child: Scaffold(
@@ -28,7 +26,7 @@ class GoldScreen extends StatelessWidget {
               // TODO: Verwende einen StreamBuilder, um den Goldpreis live anzuzeigen
               // statt des konstanten Platzhalters
               StreamBuilder(
-                stream: getGoldPriceStream(),
+                stream: getRealGoldPriceStream(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData &&
                       snapshot.connectionState == ConnectionState.active) {
@@ -70,5 +68,3 @@ class GoldScreen extends StatelessWidget {
     );
   }
 }
-
-

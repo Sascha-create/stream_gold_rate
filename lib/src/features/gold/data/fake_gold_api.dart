@@ -1,4 +1,9 @@
+
 import 'dart:math';
+
+
+
+double newPrice = 1000.0;
 
 /// Returns a stream of a fake gold prices.
 /// The prices are generated randomly.
@@ -11,3 +16,4 @@ Stream<double> getGoldPriceStream() {
     },
   );
 }
+
