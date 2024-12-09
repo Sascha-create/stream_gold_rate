@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       darkTheme: ThemeData.from(
           colorScheme: ColorScheme.fromSeed(
               seedColor: Colors.amberAccent, brightness: Brightness.dark)),
-      home: const RealGoldScreen(),
+      home: const GoldScreen(),
     );
   }
 }
