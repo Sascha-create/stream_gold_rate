@@ -32,8 +32,7 @@ class RealGoldScreen extends StatelessWidget {
                       snapshot.connectionState == ConnectionState.active) {
                     goldPrice = snapshot.data;
                     return Text(
-                      NumberFormat.simpleCurrency(locale: 'de_DE')
-                          .format(goldPrice),
+                      NumberFormat.simpleCurrency().format(goldPrice),
                       style: Theme.of(context)
                           .textTheme
                           .headlineLarge!
